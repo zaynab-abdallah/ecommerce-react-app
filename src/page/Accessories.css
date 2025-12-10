@@ -1,0 +1,232 @@
+.accessories-page {
+    min-height: 80vh;
+    padding: 80px 0 60px;
+    background: linear-gradient(to bottom, #f0f8ff 0%, #ffffff 100%);
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    display: block;
+    gap: 8px;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.breadcrumb-link {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+    color: var(--main-color);
+}
+
+.breadcrumb-separator {
+    color: #999;
+}
+
+.breadcrumb-current {
+    color: #555;
+    font-weight: 500;
+}
+
+.accessories-page .container_accessories {
+    max-width: 1400px;
+    margin: 0 ;
+    padding: 0 20px;
+    display: grid;
+}
+
+/* Header */
+.accessories-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 60px 30px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.accessories-title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    display: inline-block;
+    position: relative;
+}
+
+.accessories-title .title-gradient {
+    background: linear-gradient(135deg, var(--main-color) 0%, #00d4ff 50%, var(--main-color) 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 3s ease infinite;
+    position: relative;
+    display: inline-block;
+}
+
+.accessories-title .title-gradient::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--main-color), #00d4ff, var(--main-color));
+    background-size: 200% auto;
+    border-radius: 3px;
+    animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.accessories-subtitle {
+    font-size: 1.3rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accessories-count {
+    font-size: 1.1rem;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Products Grid */
+.accessories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 35px;
+    padding: 30px 0;
+}
+
+/* Loading */
+.loading {
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.loader {
+    width: 70px;
+    height: 70px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid var(--main-color);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 25px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading p {
+    font-size: 1.3rem;
+    color: #666;
+}
+
+/* No Accessories */
+.no-accessories {
+    text-align: center;
+    padding: 120px 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.no-accessories p {
+    font-size: 1.5rem;
+    color: #999;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .accessories-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .accessories-title {
+        font-size: 3rem;
+    }
+
+    .accessories-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .accessories-page {
+        padding: 60px 0 40px;
+    }
+
+    .accessories-header {
+        padding: 40px 20px;
+        margin-bottom: 40px;
+    }
+
+    .breadcrumb {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+    
+    .accessories-title {
+        font-size: 2.5rem;
+    }
+    
+    .accessories-title .title-gradient::after {
+        height: 4px;
+    }
+
+    .accessories-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .accessories-count {
+        font-size: 1rem;
+    }
+
+    .accessories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .accessories-title {
+        font-size: 2rem;
+    }
+
+    .accessories-subtitle {
+        font-size: 1rem;
+    }
+
+    .accessories-grid {
+        gap: 15px;
+    }
+}
+
