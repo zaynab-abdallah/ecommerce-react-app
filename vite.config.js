@@ -9,5 +9,9 @@ export default defineConfig({
     port: 5173,
     strictPort: false,
     open: true
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
   }
 })
