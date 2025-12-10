@@ -210,10 +210,7 @@ height: 600px;
 .item_details {
     padding: 72px 0;
 }
-.item_details .details_item {
-    width: 90%;
-    padding-top: 49px;
-}
+
 .item_details .details_item .name {
     margin-bottom: 14px;
     font: 1.5rem !important;
