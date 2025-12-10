@@ -2,18 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { CartProvider } from "./components/context/CartContext.jsx";
 import { FavoritesProvider } from "./components/context/FavoritesContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <CartProvider>
         <FavoritesProvider>
-      <App />
+          <App />
         </FavoritesProvider>
       </CartProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
