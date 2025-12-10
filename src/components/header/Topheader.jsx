@@ -6,7 +6,7 @@ import { TiShoppingCart } from "react-icons/ti";
 import { useCart } from "../context/CartContext";
 import { useFavorites } from "../context/FavoritesContext";
 import SearchBar from "../Search/SearchBar";
-import "../../components/header/header.css";
+import "./header.css";
 
 const Topheader = () => {
   const { cart } = useCart();
