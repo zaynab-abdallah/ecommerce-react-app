@@ -7,7 +7,6 @@ import Blog from "./page/blog";
 import BlogPost from "./page/BlogPost";
 import Contact from "./page/contact";
 import SignIn from "./page/SignIn";
-
 import { Routes, Route } from "react-router-dom";
 import ProductDetails from "./page/productDetails/ProductDetails.jsx";
 import CartPage from "./components/context/CartPage";
