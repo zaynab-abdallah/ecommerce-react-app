@@ -62,7 +62,7 @@ function Accessories() {
           {/* Breadcrumb */}
           <nav className="breadcrumb">
             <Link to="/" className="breadcrumb-link">Home</Link>
-            <span className="breadcrumb-separator">></span>
+            <span className="breadcrumb-separator">&gt;</span>
             <span className="breadcrumb-current">Accessories</span>
           </nav>
           
