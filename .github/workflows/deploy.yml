@@ -36,6 +36,25 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: Verify build output
+        run: |
+          echo "Checking dist folder contents:"
+          ls -la dist/
+          echo "Verifying index.html exists and contains bundled assets:"
+          if [ -f dist/index.html ]; then
+            echo "✓ index.html exists"
+            if grep -q "assets/index-" dist/index.html; then
+              echo "✓ Contains bundled assets (not /src/main.jsx)"
+            else
+              echo "✗ Missing bundled assets - may contain /src/main.jsx"
+              cat dist/index.html
+              exit 1
+            fi
+          else
+            echo "✗ index.html not found!"
+            exit 1
+          fi
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
