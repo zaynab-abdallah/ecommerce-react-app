@@ -5,6 +5,7 @@
 }
 .favorites-page .container{
     max-width: 2000px;
+    width: 80%;
     margin: 0 auto;
     padding: 0 20px;
     display: block;
