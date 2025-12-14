@@ -36,6 +36,7 @@
 
 .about-page .container_about {
     max-width: 2000px;
+    width: 80%;
     margin: 0 auto;
     padding: 0px 134px;
     display: block;
