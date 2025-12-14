@@ -12,6 +12,7 @@
 
 .search-page .container {
     max-width: 2000px;
+    width: 80%;
 }
 
 .search-header {
