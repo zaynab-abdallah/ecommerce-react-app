@@ -12,6 +12,8 @@
 }
 
 .item_details .container{
+  max_width:2000px;
+  width: 80%;
 display: flex;
 justify-content: space-between;
 align-items: center;
