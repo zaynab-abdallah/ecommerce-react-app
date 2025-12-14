@@ -50,17 +50,28 @@ function CategoryPage() {
             <div className="category-page">
                 <div className="container">
                     {/* Category Header */}
+
+             
                     <motion.div
-                        className="category-header"
-                        initial={{ opacity: 0, y: -30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <h1 className="category-title">{categoryName}</h1>
-                        <p className="category-count">
-                            {products.length} {products.length === 1 ? 'Product' : 'Products'}
-                        </p>
-                    </motion.div>
+    className="category-header"
+    initial={{ opacity: 0, y: -30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+>
+    <nav className="breadcrumb">
+        <a href="/">Home</a>
+        <span>&gt;</span>
+        
+
+        {/* H1 جوه الـ Breadcrumb */}
+        <p className="category-title">{categoryName}</p>
+    </nav>
+
+    <p className="category-count">
+        {products.length} {products.length === 1 ? 'Product' : 'Products'}
+    </p>
+</motion.div>
+
 
                     {/* Products Grid */}
                     {products.length > 0 ? (

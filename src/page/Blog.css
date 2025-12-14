@@ -133,12 +133,15 @@
 
 .blog_card img {
     width: 100%;
-    height: 220px;
+    height: 320px;
+    margin-bottom: 30px;
     object-fit: cover;
     transition: transform 0.3s;
 }
 
-
+.blog_card span{
+    padding: 27px;
+}
 
 .blog_content {
     padding: 25px;

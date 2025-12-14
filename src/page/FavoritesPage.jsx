@@ -15,6 +15,12 @@ function FavoritesPage() {
             <PageTransition>
                 <div className="favorites-page">
                     <div className="container">
+                                    {/* Breadcrumb */}
+                                    <nav className="breadcrumb">
+                                        <Link to="/" className="breadcrumb-link">Home</Link>
+                                        <span className="breadcrumb-separator">&gt;</span>
+                                        <span className="breadcrumb-current">My Wishlist</span>
+                                    </nav>
 
                         <motion.div
                             className="empty-favorites"
@@ -32,12 +38,6 @@ function FavoritesPage() {
                                     repeatDelay: 1
                                 }}
                             >
-                                    {/* Breadcrumb */}
-                                    <nav className="breadcrumb">
-                                        <Link to="/" className="breadcrumb-link">Home</Link>
-                                        <span className="breadcrumb-separator">&gt;</span>
-                                        <span className="breadcrumb-current">My Wishlist</span>
-                                    </nav>
                                 <FaRegHeart style={{ fontSize: '80px', color: '#ccc' }} />
                             </motion.div>
                             <h2>Your Wishlist is Empty</h2>
