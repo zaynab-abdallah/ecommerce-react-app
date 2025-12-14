@@ -32,7 +32,7 @@
     font-weight: 500;
 }
 .blog_page .container_blog{
-
+    max-width: 2000px;
     margin-top: 60px;
 
 
