@@ -35,6 +35,7 @@
 
 .contact_page .container_contact {
     max-width: 2000px;
+    width: 80%;
     margin: 0 auto;
     padding: 0 20px;
     margin-top: 60px;
