@@ -6,7 +6,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   plugins: [react()],
-  base: isProduction ? '/ecommerce-react-app/' : '/',
+    base: '/ecommerce-react-app/',
   server: {
     port: 5173,
     strictPort: false,
