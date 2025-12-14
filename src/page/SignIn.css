@@ -12,7 +12,7 @@
 .signin-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 1100px;
+    max-width: 2000px;
     width: 100%;
     background: white;
     border-radius: 25px;
