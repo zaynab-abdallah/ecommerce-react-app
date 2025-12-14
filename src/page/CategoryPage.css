@@ -5,7 +5,8 @@
 }
 .category-page .container{
     display: block;
-    
+    max-width:2000px;
+    width: 80%;
 }
 /* Category Header */
 
