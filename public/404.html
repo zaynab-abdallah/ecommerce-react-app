@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>Ecommerce App</title>
     <script>
-      // Redirect to index.html for HashRouter
+      // Redirect to index.html for HashRouter with base path support
+      const pathSegments = location.pathname.split('/').filter(Boolean);
+      const basePath = pathSegments[0] === 'ecommerce-react-app' ? '/ecommerce-react-app' : '';
       sessionStorage.redirect = location.href;
-      location.replace(location.pathname.split('/').slice(0, -1).join('/') + '/index.html');
+      location.replace(basePath + '/index.html' + location.hash);
     </script>
   </head>
   <body>
